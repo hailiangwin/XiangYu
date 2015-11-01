@@ -48,8 +48,6 @@ public class NewContentBottomDialog extends BottomBaseDialog<NewContentBottomDia
         public void toSelectImageInterface();
     }
 
-
-
     @Override
     public View onCreateView() {
 //        showAnim(new FlipVerticalSwingEnter());
@@ -62,10 +60,8 @@ public class NewContentBottomDialog extends BottomBaseDialog<NewContentBottomDia
         iv_photoHolder = ViewFindUtils.find(inflate,R.id.iv_photoHolder);
         iv_photoTopShade = ViewFindUtils.find(inflate,R.id.iv_photoTopShade);
 
-
         return inflate;
     }
-
 
     /// TODO llwoll
     void onVolumnChanged____TODO_llwoll_录音音量变化动效(int volume) {
@@ -75,9 +71,8 @@ public class NewContentBottomDialog extends BottomBaseDialog<NewContentBottomDia
         audio_wave.setRippleRepeatCount(0);
         audio_wave.reloadAnimator();
         audio_wave.startRippleAnimation();
+
     }
-
-
 
     @Override
     public void setUiBeforShow() {
@@ -139,14 +134,7 @@ public class NewContentBottomDialog extends BottomBaseDialog<NewContentBottomDia
 
         iv_photoTopShade.setVisibility(View.VISIBLE);
 
-
     }
-
-
-    /*
-
-
-     */
 
 
 }
